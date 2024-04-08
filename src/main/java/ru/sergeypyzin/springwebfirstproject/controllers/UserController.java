@@ -2,8 +2,9 @@ package ru.sergeypyzin.springwebfirstproject.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ru.sergey.springweb.domain.User;
-import ru.sergey.springweb.services.RegistrationService;
+import ru.sergeypyzin.springwebfirstproject.domain.User;
+import ru.sergeypyzin.springwebfirstproject.services.RegistrationService;
+
 
 import java.util.List;
 
