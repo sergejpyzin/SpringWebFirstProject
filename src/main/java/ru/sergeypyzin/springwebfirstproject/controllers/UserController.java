@@ -1,6 +1,6 @@
 package ru.sergeypyzin.springwebfirstproject.controllers;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.web.bind.annotation.*;
 import ru.sergeypyzin.springwebfirstproject.domain.User;
 import ru.sergeypyzin.springwebfirstproject.services.RegistrationService;
@@ -12,8 +12,11 @@ import java.util.List;
 @RequestMapping("/users")
 public class UserController {
 
-    @Autowired
-    private RegistrationService service;
+    private final RegistrationService service;
+
+    public UserController(RegistrationService service) {
+        this.service = service;
+    }
 
     @GetMapping
     public List<User> userList() {
