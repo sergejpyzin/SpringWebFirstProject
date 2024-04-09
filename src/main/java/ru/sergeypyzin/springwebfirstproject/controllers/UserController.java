@@ -40,7 +40,7 @@ public class UserController {
      * @param email email пользователя
      * @return сообщение об успешном добавлении пользователя
      */
-    @PostMapping("/param")
+    @PostMapping()
     public String userAddFromParam(@RequestParam String name, @RequestParam int age, @RequestParam String email) {
 
         service.processRegistration(name, age, email);
